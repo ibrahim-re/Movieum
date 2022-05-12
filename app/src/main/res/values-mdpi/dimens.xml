@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="TextSize">12sp</dimen>
+    <dimen name="TextSizeSmall">11sp</dimen>
+    <dimen name="ButtonHeight">30dp</dimen>
+    <dimen name="HomeTitleTextSize">20sp</dimen>
+    <dimen name="HomeTextTextSize">12sp</dimen>
+    <dimen name="HomeButtonTextSize">13sp</dimen>
+    <dimen name="ImageWidth">100dp</dimen>
+    <dimen name="ImageHeight">160dp</dimen>
+    <dimen name="TitleSize">18sp</dimen>
+    <dimen name="CategorySize">12sp</dimen>
+    <dimen name="ItemImageWidth">90dp</dimen>
+    <dimen name="ItemImageHeight">110dp</dimen>
+    <dimen name="CircleImageWidth">75dp</dimen>
+    <dimen name="CircleImageHeight">75dp</dimen>
+
+
+
+</resources>

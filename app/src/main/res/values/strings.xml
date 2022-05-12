@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Movieum</string>
+    <string name="choose">Choose categories you want: </string>
+    <string name="ready">READY</string>
+    <string name="action">Action</string>
+    <string name="adventure">Adventure</string>
+    <string name="animation">Animation</string>
+    <string name="documentary">Documentary</string>
+    <string name="crime">Crime</string>
+    <string name="comedy">Comedy</string>
+    <string name="drama">Drama</string>
+    <string name="family">Family</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="horror">Horror</string>
+    <string name="history">History</string>
+    <string name="mystery">Mystery</string>
+    <string name="music">Music</string>
+    <string name="romance">Romance</string>
+    <string name="western">Western</string>
+    <string name="scifi">Sci-Fi</string>
+    <string name="thriller">Thriller</string>
+    <string name="war">War</string>
+    <string name="director">Director</string>
+    <string name="cast">Cast</string>
+    <string name="about">About</string>
+    <string name="goToCategoriesTitle">Suggest me\na movie</string>
+    <string name="goToCategoriesText">Based on categories\nI choose.</string>
+    <string name="goToYearTitle">My birthday\nmovies</string>
+    <string name="goToYearText">Show me the movies\nthat were released\non my year of birth.</string>
+    <string name="swipeRight">Swipe To Right</string>
+    <string name="swipeLift">Swipe To Lift</string>
+    <string name="enterYear">Enter the year you were born\nto see the most popular movies \nreleased that year:</string>
+    <string name="moviesListTitle">My birthday movies list:</string>
+
+    <string-array name="years">
+        <item> 1970 </item>
+        <item> 1971 </item>
+        <item> 1972 </item>
+        <item> 1973 </item>
+        <item> 1974 </item>
+        <item> 1975 </item>
+        <item> 1976 </item>
+        <item> 1977 </item>
+        <item> 1978 </item>
+        <item> 1979 </item>
+        <item> 1980 </item>
+        <item> 1981 </item>
+        <item> 1982 </item>
+        <item> 1983 </item>
+        <item> 1984 </item>
+        <item> 1985 </item>
+        <item> 1986 </item>
+        <item> 1987 </item>
+        <item> 1988 </item>
+        <item> 1989 </item>
+        <item> 1990 </item>
+        <item> 1991 </item>
+        <item> 1992 </item>
+        <item> 1993 </item>
+        <item> 1994 </item>
+        <item> 1995 </item>
+        <item> 1996 </item>
+        <item> 1997 </item>
+        <item> 1998 </item>
+        <item> 1999 </item>
+        <item> 2000 </item>
+        <item> 2001 </item>
+        <item> 2002 </item>
+        <item> 2003 </item>
+        <item> 2004 </item>
+        <item> 2005 </item>
+        <item> 2006 </item>
+        <item> 2007 </item>
+        <item> 2008 </item>
+    </string-array>
+
+
+</resources>

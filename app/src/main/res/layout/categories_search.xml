@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/categoriesbackground">
+
+    <TextView
+        android:id="@+id/chooseTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/TextSize"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/custom_shape_all"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.331"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/readyForCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ButtonHeight"
+        android:text="@string/ready"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:background="@drawable/custom_shape_all"
+
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.896"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <CheckBox
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/action"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="28"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/crime"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView"
+        app:layout_constraintRight_toLeftOf="@+id/adventure"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/comedy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/comedy"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="35"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/fantasy"
+        app:layout_constraintTop_toBottomOf="@+id/adventure"
+        app:layout_constraintLeft_toLeftOf="@+id/adventure" />
+
+    <CheckBox
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/history"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="36"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/mystery"
+        app:layout_constraintTop_toBottomOf="@+id/drama"
+        app:layout_constraintLeft_toLeftOf="@+id/drama" />
+
+    <CheckBox
+        android:id="@+id/thriller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/thriller"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="53"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/war"
+        app:layout_constraintTop_toBottomOf="@+id/mystery"
+        app:layout_constraintLeft_toLeftOf="@+id/mystery" />
+
+    <CheckBox
+        android:id="@+id/scifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/scifi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="878"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/documentary"
+        app:layout_constraintTop_toBottomOf="@+id/horror"
+        app:layout_constraintLeft_toLeftOf="@+id/horror" />
+
+    <CheckBox
+        android:id="@+id/adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/adventure"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="12"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/comedy"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView"
+        app:layout_constraintRight_toLeftOf="@+id/animation"
+        app:layout_constraintLeft_toRightOf="@+id/action" />
+
+    <CheckBox
+        android:id="@+id/crime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/crime"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="80"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/family"
+        app:layout_constraintTop_toBottomOf="@+id/action"
+        app:layout_constraintLeft_toLeftOf="@+id/action" />
+
+    <CheckBox
+        android:id="@+id/family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/family"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="10751"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/horror"
+        app:layout_constraintTop_toBottomOf="@+id/crime"
+        app:layout_constraintLeft_toLeftOf="@+id/crime" />
+
+    <CheckBox
+        android:id="@+id/horror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/horror"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="27"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/scifi"
+        app:layout_constraintTop_toBottomOf="@+id/family"
+        app:layout_constraintLeft_toLeftOf="@+id/family" />
+
+    <CheckBox
+        android:id="@+id/romance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/romance"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="10749"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/documentary"
+        app:layout_constraintTop_toBottomOf="@+id/music"
+        app:layout_constraintLeft_toLeftOf="@+id/music" />
+
+    <CheckBox
+        android:id="@+id/drama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/drama"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="18"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/history"
+        app:layout_constraintTop_toBottomOf="@+id/animation"
+        app:layout_constraintLeft_toLeftOf="@+id/animation" />
+
+    <CheckBox
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/animation"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="16"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/drama"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/adventure" />
+
+    <CheckBox
+        android:id="@+id/documentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/documentary"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="99"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/readyForCategories"
+        app:layout_constraintTop_toBottomOf="@+id/scifi"
+        app:layout_constraintLeft_toLeftOf="@+id/scifi" />
+
+    <CheckBox
+        android:id="@+id/fantasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/fantasy"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="14"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/music"
+        app:layout_constraintTop_toBottomOf="@+id/comedy"
+        app:layout_constraintLeft_toLeftOf="@+id/comedy" />
+
+    <CheckBox
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/music"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="10402"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/romance"
+        app:layout_constraintTop_toBottomOf="@+id/fantasy"
+        app:layout_constraintLeft_toLeftOf="@+id/fantasy" />
+
+    <CheckBox
+        android:id="@+id/mystery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/mystery"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="9648"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/thriller"
+        app:layout_constraintTop_toBottomOf="@+id/history"
+        app:layout_constraintLeft_toLeftOf="@+id/history" />
+
+    <CheckBox
+        android:id="@+id/war"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/war"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/TextSizeSmall"
+        android:textStyle="bold"
+        android:theme="@style/CheckBoxTheme"
+        android:tag="10752"
+        android:onClick="createGenres"
+
+        app:layout_constraintBottom_toTopOf="@+id/readyForCategories"
+        app:layout_constraintTop_toBottomOf="@+id/thriller"
+        app:layout_constraintLeft_toLeftOf="@+id/thriller" />
+
+
+    <ImageButton
+        android:id="@+id/back_button_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        android:background="?android:selectableItemBackground"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemTextColor="@color/colorPrimary"
+        app:itemIconTint="@color/colorPrimary"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
