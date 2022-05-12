@@ -9,7 +9,7 @@ Movieum - Movie App
   # This app is build using Java for android devices, features used:
     - Retrofit, to get data from http source.
     - Glid to get image from the internet and it inside the app.
-    - in addition to some animated navigatio.
+    - in addition to some animated navigation.
 
 
-  # Database used for this app is an API from TMDB - The Movie Database website https://www.themoviedb.org/
+* Database used for this app is an API from TMDB - The Movie Database website https://www.themoviedb.org/
